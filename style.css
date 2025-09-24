@@ -1,0 +1,332 @@
+/* ---------------- Font ---------------- */
+@font-face {
+  font-family: "2dum";
+  src: url("2dumb.woff2") format("woff2"),
+       url("2dumb.ttf") format("truetype"); /* fallback for older browsers */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply font globally */
+html, body {
+  font-family: "2dum", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Make all elements inherit the custom font */
+h1, h2, h3, h4, h5, h6,
+p, a, li, ul, ol,
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+
+
+/* ---------------- Header ---------------- */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* ---------------- Navigation ---------------- */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- Main content ---------------- */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ---------------- Content Boxes ---------------- */
+.content-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ---------------- Text & Image Layout ---------------- */
+.text-and-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-and-image.reverse-layout {
+    flex-direction: column;
+}
+
+.text-content {
+    flex: 1;
+    width: 100%;
+}
+
+/* ---------------- Images ---------------- */
+.image-container {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fafafa;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.image-container img,
+.image-container iframe {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.image-container p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #555;
+    font-style: italic;
+}
+
+/* ---------------- Road Sections ---------------- */
+.road-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-road-image {
+    width: 100%;
+    max-width: 600px; /* allow proper desktop size */
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer; /* clickable */
+}
+
+.small-road-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.small-road-images img {
+    width: calc(50% - 5px);
+    height: auto;
+    border-radius: 6px;
+}
+
+.road-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+/* ---------------- Footer ---------------- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+@media (min-width: 768px) {
+    .text-and-image {
+        flex-direction: row;
+    }
+
+    .text-and-image.reverse-layout {
+        flex-direction: row-reverse;
+    }
+
+    .small-road-images img {
+        width: calc(50% - 5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .text-and-image,
+    .text-and-image.reverse-layout {
+        flex-direction: column;
+    }
+
+    .small-road-images {
+        flex-direction: column;
+    }
+
+    .small-road-images img {
+        width: 100%;
+    }
+}
+
+/*  Make All Media Responsive  */
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Road 1 custom grid */
+.road-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
+  align-items: start;
+}
+
+.road-grid iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+  display: block;
+}
+
+.side-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+}
+
+.main-road-image, .small-road-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+/* Road 3 grid */
+.road3-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; 
+}
+
+.left-stack,
+.right-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; 
+}
+
+.road3-grid img,
+.road3-grid iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Road description full width */
+.road-description {
+  margin-top: 20px; 
+  max-width: 100%;   
+}
+
+.road-description h4 {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.road-description ul {
+  padding-left: 20px;
+}
+/* Road 5 grid layout */
+.road5-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* gap between left and right columns */
+}
+
+.right-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 55px; 
+}
+
+.road5-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.road-description {
+  margin-top: 15px;
+}
+
+.road-description h4 {
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.road-description ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+/* Video Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 per row on desktop */
+    gap: 20px; /* spacing between videos */
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px; /* adjust for preferred aspect ratio */
+    border-radius: 8px;
+}
+
+.video-card .credit {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+}
+
+
