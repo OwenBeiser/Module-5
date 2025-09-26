@@ -1,7 +1,8 @@
 /* ---------------- Font ---------------- */
 @font-face {
-  font-family: "2dum";
+  font-family: "2Dumb";
   src: url("2Dumb.woff2") format("woff2"),
+       url("2Dumb.woff") format("woff"),
        url("2Dumb.ttf") format("truetype"); 
   font-weight: normal;
   font-style: normal;
@@ -10,7 +11,7 @@
 
 /* Apply font globally */
 html, body {
-  font-family: "2dumb", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "2Dumb", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -328,5 +329,6 @@ img, iframe, video {
     font-style: italic;
     text-align: center;
 }
+
 
 
