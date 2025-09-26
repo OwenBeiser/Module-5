@@ -166,15 +166,16 @@ main {
 
 
 
-/*  Footer  */
-footer {
-    background-color: #333;
-    color: #fff;
+/* Footer */
+ footer { background-color: #333;
+   color: #fff;
     text-align: center;
-    padding: 1em 0;
-    width: 100%;
-}
-
+     padding: 1em 0;
+      width: 100%; 
+       position: relative;
+        bottom: 0;
+         margin-top: 20px; 
+        }
 /*  Media Queries  */
 @media (min-width: 768px) {
     .text-and-image {
