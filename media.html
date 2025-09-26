@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>812Corners | Media</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>812Corners | Media</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
 
-     <!-- SEO META TAGS -->
-    <meta name="description" content="812Corners Media page with curated driving videos, credits, and recommended channels.">
-    <meta name="keywords" content="812Corners, spirited driving, canyon runs, car culture, driving media, YouTube, Indiana roads">
-    <meta name="author" content="Owen Beiser">
+  <!-- SEO META TAGS -->
+  <meta name="description" content="812Corners Media page with curated driving videos, credits, and recommended channels.">
+  <meta name="keywords" content="812Corners, spirited driving, canyon runs, car culture, driving media, YouTube, Indiana roads">
+  <meta name="author" content="Owen Beiser">
+
+  <!-- Small inline styles to replace obsolete attributes and keep embeds responsive -->
+  <style>
+   
+    iframe { border: 0; }
+
+    .video-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      align-items: start;
+    }
+   
+    .video-card {
+      position: relative;
+      padding-top: 56.25%;  
+    }
+    .video-card iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .credit {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="NewLogo.png" alt="Website Logo" class="logo">
+            <img src="Newlogo.png" alt="Website Logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -38,91 +68,115 @@
     <div class="video-grid">
         <!-- Row of Videos -->
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/iHnrJDAs75Y" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@Revlox</p>
+          <iframe src="https://www.youtube.com/embed/iHnrJDAs75Y" title="Driving video — @Revlox"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@Revlox</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/4W8PaXv5fm0?start=51" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@o_O S2000</p>
+          <iframe src="https://www.youtube.com/embed/4W8PaXv5fm0?start=51" title="Driving video — @o_O S2000"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@o_O S2000</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/lD4IhDTyQuI?si=atPxgPDl_JFpsebk" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@SashimiTouge峠</p>
+          <iframe src="https://www.youtube.com/embed/lD4IhDTyQuI?si=atPxgPDl_JFpsebk" title="Driving video — @SashimiTouge峠"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@SashimiTouge峠</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/2R_Ogktwb70?start=167" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@Tech-53</p>
+          <iframe src="https://www.youtube.com/embed/2R_Ogktwb70?start=167" title="Driving video — @Tech-53"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@Tech-53</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/Itq7l9FLpl4?si=xxAcBJEmwK4kURyx" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@YutashuTouge</p>
+          <iframe src="https://www.youtube.com/embed/Itq7l9FLpl4?si=xxAcBJEmwK4kURyx" title="Driving video — @YutashuTouge"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@YutashuTouge</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/xqvupAhBuaQ?start=57" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@Charper732</p>
+          <iframe src="https://www.youtube.com/embed/xqvupAhBuaQ?start=57" title="Driving video — @Charper732"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@Charper732</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/8ycp_41TvAo?start=28" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@Dorifto Boy</p>
+          <iframe src="https://www.youtube.com/embed/8ycp_41TvAo?start=28" title="Driving video — @Dorifto Boy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@Dorifto Boy</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/_HHuWoBnqUY?start=66" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@Ridge Chaser</p>
+          <iframe src="https://www.youtube.com/embed/_HHuWoBnqUY?start=66" title="Driving video — @Ridge Chaser"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@Ridge Chaser</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/jQ6Nqma5SLE?si=Pa9CQ0yEBqGcUBT7" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@youchasedafterme</p>
+          <iframe src="https://www.youtube.com/embed/jQ6Nqma5SLE?si=Pa9CQ0yEBqGcUBT7" title="Driving video — @youchasedafterme"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@youchasedafterme</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/Ga0ATrEdz4?start=7" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@tomasisk0</p>
+          <iframe src="https://www.youtube.com/embed/Ga0ATrEdz4?start=7" title="Driving video — @tomasisk0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@tomasisk0</p>
         </div>
 
         <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/T1ERN9d0uhA?si=VjFC190y1BgnYI35" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-            <p class="credit">@feelsgoodS2K</p>
+          <iframe src="https://www.youtube.com/embed/T1ERN9d0uhA?si=VjFC190y1BgnYI35" title="Driving video — @feelsgoodS2K"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">@feelsgoodS2K</p>
         </div>
+
         <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/7DXs57rt8Pk?si=IvXnytrGLP_FWXLH" title="Driving Video" frameborder="0" allowfullscreen></iframe>
-    <p class="credit">Credit: wettm3</p>
-</div>
+          <iframe src="https://www.youtube.com/embed/7DXs57rt8Pk?si=IvXnytrGLP_FWXLH" title="Driving video — wettm3"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+          <p class="credit">Credit: wettm3</p>
+        </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <!-- Recommended Channels Section -->
+    <section class="content-box">
+      <h2>Recommended Channels &amp; Pages</h2>
+      <ul class="recommend-list">
+        <li><a href="https://www.youtube.com/@Revlox" target="_blank" rel="noopener noreferrer">@Revlox</a></li>
+        <li><a href="https://www.youtube.com/@Hoonigan" target="_blank" rel="noopener noreferrer">@Hoonigan</a></li>
+        <li><a href="https://www.youtube.com/@DonutMedia" target="_blank" rel="noopener noreferrer">@DonutMedia</a></li>
+        <li><a href="https://www.youtube.com/@driver61" target="_blank" rel="noopener noreferrer">@Driver61</a></li>
+        <li><a href="https://www.youtube.com/@o_OS2000" target="_blank" rel="noopener noreferrer">@o_O S2000</a></li>
+        <li><a href="https://www.youtube.com/@Charper732" target="_blank" rel="noopener noreferrer">@Charper732</a></li>
+        <li><a href="https://www.youtube.com/@RidgeChaser" target="_blank" rel="noopener noreferrer">@Ridge Chaser</a></li>
+        <li><a href="https://www.youtube.com/@tomasisk0" target="_blank" rel="noopener noreferrer">@tomasisk0</a></li>
+        <li><a href="https://www.youtube.com/@Tech53" target="_blank" rel="noopener noreferrer">@Tech-53</a></li>
+        <li><a href="https://www.youtube.com/@YutashuTouge" target="_blank" rel="noopener noreferrer">@YutashuTouge</a></li>
+        <li><a href="https://www.youtube.com/@SashimiTouge" target="_blank" rel="noopener noreferrer">@SashimiTouge峠</a></li>
+        <li><a href="https://www.youtube.com/@feelsgoodS2K" target="_blank" rel="noopener noreferrer">@feelsgoodS2K</a></li>
+        <li><a href="https://www.youtube.com/@DoriftoBoy" target="_blank" rel="noopener noreferrer">@DoriftoBoy</a></li>
+        <li><a href="https://www.youtube.com/@youchasedafterme" target="_blank" rel="noopener noreferrer">@youchasedafterme</a></li>
+      </ul>
+    </section>
+  </main>
 
-        <!-- Recommended Channels Section -->
-        <section class="content-box">
-            <h2>Recommended Channels & Pages</h2>
-            <ul class="recommend-list">
-                <li><a href="https://www.youtube.com/@Revlox" target="_blank">@Revlox</a></li>
-                <li><a href="https://www.youtube.com/@Hoonigan" target="_blank">@Hoonigan</a></li>
-                <li><a href="https://www.youtube.com/@DonutMedia" target="_blank">@DonutMedia</a></li>
-                <li><a href="https://www.youtube.com/@driver61" target="_blank">@Driver61</a></li>
-                <li><a href="https://www.youtube.com/@o_OS2000" target="_blank">@o_O S2000</a></li>
-                <li><a href="https://www.youtube.com/@Charper732" target="_blank">@Charper732</a></li>
-                <li><a href="https://www.youtube.com/@RidgeChaser" target="_blank">@Ridge Chaser</a></li>
-                <li><a href="https://www.youtube.com/@tomasisk0" target="_blank">@tomasisk0</a></li>
-                <li><a href="https://www.youtube.com/@Tech53" target="_blank">@Tech-53</a></li>
-                <li><a href="https://www.youtube.com/@YutashuTouge" target="_blank">@YutashuTouge</a></li>
-                <li><a href="https://www.youtube.com/@SashimiTouge" target="_blank">@SashimiTouge峠</a></li>
-                <li><a href="https://www.youtube.com/@feelsgoodS2K  " target="_blank">@feelsgoodS2K</a></li>
-                <li><a href="https://www.youtube.com/@DoriftoBoy" target="_blank">@DoriftoBoy</a></li>
-                <li><a href="https://www.youtube.com/@youchasedafterme" target="_blank">@youchasedafterme</a></li>  
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 SDEV153 Website Project - Owen Beiser</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 SDEV153 Website Project - Owen Beiser</p>
+  </footer>
 </body>
 </html>

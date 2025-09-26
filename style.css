@@ -1,4 +1,4 @@
-/* ---------------- Font ---------------- */
+/*  Font  */
 @font-face {
   font-family: "2Dumb";
   src: url("2Dumb.woff2") format("woff2"),
@@ -18,7 +18,7 @@ html, body {
   color: #333;
 }
 
-/* Make all elements inherit the custom font */
+/* Make all get the custom font */
 h1, h2, h3, h4, h5, h6,
 p, a, li, ul, ol,
 button, input, textarea, select {
@@ -27,7 +27,7 @@ button, input, textarea, select {
 
 
 
-/* ---------------- Header ---------------- */
+/*  Header  */
 header {
     background-color: #333;
     color: #fff;
@@ -50,7 +50,7 @@ header {
     margin-bottom: 5px;
 }
 
-/* ---------------- Navigation ---------------- */
+/*  Navigation  */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -71,14 +71,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* ---------------- Main content ---------------- */
+/*  Main content  */
 main {
     max-width: 960px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-/* ---------------- Content Boxes ---------------- */
+/*  Content Boxes  */
 .content-box {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -88,7 +88,7 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* ---------------- Text & Image Layout ---------------- */
+/*  Text & Image Layout  */
 .text-and-image {
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@ main {
     width: 100%;
 }
 
-/* ---------------- Images ---------------- */
+/*  Images  */
 .image-container {
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -131,7 +131,7 @@ main {
     font-style: italic;
 }
 
-/* ---------------- Road Sections ---------------- */
+/*  Road Sections  */
 .road-images {
     display: flex;
     flex-direction: column;
@@ -143,7 +143,7 @@ main {
     max-width: 600px; /* allow proper desktop size */
     height: auto;
     border-radius: 8px;
-    cursor: pointer; /* clickable */
+    
 }
 
 .small-road-images {
@@ -166,7 +166,7 @@ main {
 
 
 
-/* ---------------- Footer ---------------- */
+/*  Footer  */
 footer {
     background-color: #333;
     color: #fff;
@@ -175,7 +175,7 @@ footer {
     width: 100%;
 }
 
-/* ---------------- Media Queries ---------------- */
+/*  Media Queries  */
 @media (min-width: 768px) {
     .text-and-image {
         flex-direction: row;
@@ -262,7 +262,6 @@ img, iframe, video {
   border-radius: 8px;
 }
 
-/* Road description full width */
 .road-description {
   margin-top: 20px; 
   max-width: 100%;   
