@@ -18,7 +18,7 @@ html, body {
   color: #333;
 }
 
-/* Make all get the custom font */
+/* Make all elements get the font */
 h1, h2, h3, h4, h5, h6,
 p, a, li, ul, ol,
 button, input, textarea, select {
@@ -27,7 +27,7 @@ button, input, textarea, select {
 
 
 
-/*  Header  */
+/*  header  */
 header {
     background-color: #333;
     color: #fff;
@@ -50,7 +50,7 @@ header {
     margin-bottom: 5px;
 }
 
-/*  Navigation  */
+/*  navigation  */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -71,14 +71,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/*  Main content  */
+/*  main content  */
 main {
     max-width: 960px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-/*  Content Boxes  */
+/*  content boxes  */
 .content-box {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -88,7 +88,7 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/*  Text & Image Layout  */
+/*  text+image layout  */
 .text-and-image {
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@ main {
     font-style: italic;
 }
 
-/*  Road Sections  */
+/*  road Sections  */
 .road-images {
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ main {
 
 .main-road-image {
     width: 100%;
-    max-width: 600px; /* allow proper desktop size */
+    max-width: 600px; /* allows proper desktop size */
     height: auto;
     border-radius: 8px;
     
@@ -166,7 +166,7 @@ main {
 
 
 
-/* Footer */
+/* footer */
  footer { background-color: #333;
    color: #fff;
     text-align: center;
@@ -176,7 +176,7 @@ main {
         bottom: 0;
          margin-top: 20px; 
         }
-/*  Media Queries  */
+/*  media queries  */
 @media (min-width: 768px) {
     .text-and-image {
         flex-direction: row;
@@ -206,7 +206,7 @@ main {
     }
 }
 
-/*  Make All Media Responsive  */
+/*  makes All media responsive  */
 img, iframe, video {
     max-width: 100%;
     height: auto;
@@ -241,7 +241,7 @@ img, iframe, video {
 }
 
 
-/* Road 3 grid */
+/* road 3 grid */
 .road3-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -276,7 +276,7 @@ img, iframe, video {
 .road-description ul {
   padding-left: 20px;
 }
-/* Road 5 grid layout */
+/* road  4 grid layout */
 .road5-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -312,13 +312,13 @@ img, iframe, video {
 /* Video Grid */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 per row on desktop */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 per row on desktop - stacked on mobile  */
     gap: 20px; /* spacing between videos */
 }
 
 .video-card iframe {
     width: 100%;
-    height: 200px; /* adjust for preferred aspect ratio */
+    height: 200px; /* adjust aspect ratio */
     border-radius: 8px;
 }
 
